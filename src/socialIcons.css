@@ -1,0 +1,14 @@
+  .socialUL li {
+   display: inline;
+  }
+  .socialUL li img{
+    height: 55px;
+    width: 55px;
+    position: relative;
+    margin-right: 15px;
+    opacity: 1.0;
+  }
+  
+  .contactUL li {
+  
+   }

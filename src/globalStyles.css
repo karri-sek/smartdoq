@@ -1,0 +1,379 @@
+.flex-container{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    
+}
+
+
+.body-bg-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.body-class{
+ padding: 0;
+ margin: 0;
+ height: 100vh;
+}
+.flex-item .align-top {
+    align-self: flex-end;
+    left: 0; /* new */
+    top: 0; /* new */
+    position: absolute; /* new */
+}
+
+.description {
+  color: white;
+  background: transparent;
+  font-size: 1em;
+  letter-spacing: 0px;
+  left: 18%;
+  top: 40%;
+  text-align: center;
+  width: 35%;
+  position: absolute;
+}
+div#iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+.hideCarousel {
+  display: none;
+}
+
+.overlay .pdfIframeContainer{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    position: absolute;
+    width: 100vh;
+    height: 100%;
+}
+
+.overlay .pdfIframeContainer{
+   
+    width: 100%;
+}
+
+.iframe-video-div{
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+}
+
+.iframe-video-div iframe{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: flex; /* Hidden by default */
+    height: 100vh; /* Full height (cover the whole page) */
+    top: 0%;
+    left: 0;
+    right: 0;
+    color:#FFF;
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+    cursor: pointer; /* Add a pointer on hover */
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+
+  .overlay .pdf-container {
+    width: 100%;
+    padding: 5%;
+}
+
+.overlay .scroll-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.overlay .scroll-wrapper iframe {
+  width: 100%;
+  height: 100vh;
+}
+  
+  .pdfViewer {
+      background-color: black;
+      width: 55%;
+      height: 55%;
+      position: absolute;
+      top: 10%;
+  }
+ 
+  .overlay nav {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    height: 60%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+  }
+  
+  .overlay ul li {
+    backface-visibility: hidden;
+    min-height: 54px;
+    height: calc(100%/5);
+  
+  }
+  
+  .overlay ul li a {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 74.5px;
+    display: block;
+    color: #FFF;
+    transition: color 0.2s;
+  }
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  /* Overlay closing cross */
+  .overlay .overlay-close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      overflow: hidden;
+      border: none;
+      background: url(./files/cross.png) no-repeat center center;
+      text-indent: 200%;
+      color: transparent;
+      outline: none;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .contact-img{
+    width: 5%;
+  }
+
+  .imageControlFlex{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    position: absolute;
+    top: 32%;
+    left: 62%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-item {
+      display: flex;
+      width: 100%;
+      margin: auto;
+      position: relative;
+      height: 100vh;
+  }
+
+  .controlFlex {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    top: 40%;
+    left: 68%;
+  }
+  .box{
+    width: 40%;
+    margin: 5px;
+    outline: none;
+  }
+  #LogoDesc .box {
+      width: 60%;
+  }
+  .rightContainerFlex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightContainerFlex .box {
+    width: 300px;
+  }
+
+  .logoDescContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #LogoDesc .align-self {
+      margin-top: 5%;
+  }
+
+  #LogoDesc p span {
+    font-size: 200% !important;
+  }
+
+  .pdf-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pdf-flex-item img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .pdf-flex-item {
+    height: 600px;
+    position: relative;
+  }
+
+  .pdf-flex-bottom-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .pdf-viewer-close{
+    background-color:  black !important;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 10%;
+    margin-right: 0rem;
+  }
+
+  .pdf-flex-bottom-item svg {
+    margin: 2.5rem;
+    background-color: rgba(0,0,0,0.5);
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    transition: all .3s;
+    margin: 0%;
+  }
+  
+  .pdf-flex-bottom-item p {
+    background-color: rgba(0,0,0,0.5);
+   align-self: center;
+    font-size: 35px;
+    transition: all .3s;
+    margin: 0%;
+  }
+
+  
+
+
+  @media screen  and (max-width: 800px) and (orientation : portrait){
+    .flex-item {
+      flex-wrap: wrap;
+    }
+    .logoDescContainer {
+      width: 100%;
+    }
+    #LogoDesc .box {
+      width: 50%;
+   }
+    #LogoDesc p span {
+      font-size: 100% !important;
+    }
+
+    .controlFlex, .imageControlFlex {
+      width: 100%;
+      display: block;
+    }
+    .controlFlex .box {
+      display: inline-block;
+      width: 46%;
+    }
+    .rightContainerFlex .box {
+      width: 150px;
+    }
+
+    .pdf-flex-item {
+      height: 250px;
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 1024px) and (orientation: landscape) {
+    #LogoDesc p span {
+      font-size: 100% !important;
+    }
+    .rightContainerFlex .box {
+      width: 150px;
+    }
+
+    .pdf-flex-item {
+      height: 215px;
+    }
+
+  }
+ 
+  /* @media (orientation: portrait) {
+    .controlFlex{
+    top: 51%;
+    left: 20%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    }
+    .box{
+      width: 200px;
+    }
+    .logoDescContainer{
+      left: 0%;
+    }
+    .align-self{
+    text-align: center;
+    }
+  }
+  @media screen and (max-width: 812px) and (orientation: landscape) {
+    .controlFlex{
+      top: 12%;
+      right: 10%;
+      }
+      .rightContainerFlex{
+        width: 220px;
+        top: 12%;
+      }
+      .logoDescContainer{
+        flex-direction: column;
+        right: 45%;
+        top: 12%;
+        left: 10%;;
+        width: 220px;
+      }
+      .align-self{
+      text-align:center;
+      width: 400px;
+      }
+  } */
+
+  

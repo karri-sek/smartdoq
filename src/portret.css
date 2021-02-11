@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+
+
+@media (orientation: portrait) {
+  body {
+    margin: 0;
+  }
+.description {
+  position: absolute;
+  color: white;
+  background: transparent;
+  font-size: 1em;
+  letter-spacing: 0px;
+  left: 18%;
+  top: 30%;
+  text-align: center;width: 65%;
+}
+.rmenu-burger{
+    top: 0%;
+    outline: none;
+    right: 10%;
+    outline: none;
+}
+}
+@media (orientation: portrait) {
+  .overlay{
+    display: flex;
+  position: absolute; /* Sit on top of the page content */
+  height: 100vh; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  overflow-y: hidden;
+  }
+
+.overlay nav {
+  transform: translateY(-50%);
+}
+.overlay ul {
+  padding: 0;
+  margin: 0;
+}
+
+.pdf-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .pdf-flex-item{
+  width: 300px;
+  height: 300px;
+}
+.pdf-flex-item img {
+  width: 300px;
+  height: 300px;
+} */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .overlay nav > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  height: 210px;
+  padding: 0;
+  }
+  .socialUL  {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  padding: 0 0 0 100px;
+  }
+  .grid-column {
+    top:0;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    border: none;
+  }
+  /* .pdf-flex-item img {
+    width: 300px;
+    height: 300px;
+  }
+  .pdf-flex-item{
+    width: 300px;
+    height: 300px;
+  } */
+
+} 
+
+@media screen and (min-width: 320px) and (max-width: 812px) and (orientation: landscape) {
+
+/* .pdf-flex-item img {
+  width: 300px;
+  height: 300px;
+}
+.pdf-flex-item{
+  width: 300px;
+  height: 300px;
+} */
+} 
