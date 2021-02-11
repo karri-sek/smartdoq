@@ -22,8 +22,7 @@ import '../globalStyles.css';
 import '../portret.css';
 import '../socialIcons.css';
 import '../hamburgers.css';
-import "../../styles/styles.css"
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import {
   getWebsiteHeaderData,
