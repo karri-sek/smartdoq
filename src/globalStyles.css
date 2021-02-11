@@ -333,7 +333,16 @@ a {
   .pdf-flex-item {
     height: 215px;
   }
+}
 
+.pdf-flex-item iframe{
+  position: absolute;
+  width: 526px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30%;
 }
 
 /* @media (orientation: portrait) {
