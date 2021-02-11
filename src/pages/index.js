@@ -43,7 +43,7 @@ const FooterLine = styled.img`
   position: absolute;
   outline: none;
   @media (orientation: portrait) {
-    bottom: 10%;
+    bottom: 8%;
   }
 `;
 
