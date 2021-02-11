@@ -94,7 +94,7 @@ display: none;
 }
 
 .overlay .pdf-container {
-  width: 100%;
+  width: 960px;
   padding: 5%;
 }
 
@@ -147,8 +147,8 @@ a {
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -158,8 +158,11 @@ a {
     text-indent: 200%;
     color: transparent;
     outline: none;
-  z-index: 100;
-  cursor: pointer;
+    z-index: 100;
+    cursor: pointer;
+    border: 10px #686868 solid;
+    border-radius: 23%;
+    background-color: #686868;
 }
 
 .contact-img{
@@ -250,7 +253,7 @@ a {
 }
 
 .pdf-flex-item {
-  height: 600px;
+  height: 540px;
   position: relative;
 }
 
@@ -287,7 +290,18 @@ a {
   margin: 0%;
 }
 
-
+.pdf-flex-item iframe{
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 540px;
+  width: 960px;
+}
 
 
 @media screen  and (max-width: 800px) and (orientation : portrait){
@@ -320,6 +334,9 @@ a {
     height: 250px;
     margin: auto;
   }
+  .pdf-flex-item iframe{
+    width: 445px;
+  }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -334,7 +351,12 @@ a {
     height: 215px;
   }
 
+  .pdf-flex-item iframe{
+    width: 382px;
+  }
 }
+
+
 
 /* @media (orientation: portrait) {
   .controlFlex{
