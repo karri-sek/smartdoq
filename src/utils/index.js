@@ -21,7 +21,6 @@ export const getWebsiteHeaderData = data => {
 }
 
 export const getVideoMapSlice = data => {
-  console.log("")
   return data.prismicBlogpost.data.body
     .filter(item => item['__typename'] === videoMapSlice)
     .map(i => i.primary)[0]
@@ -41,10 +40,11 @@ export const getPDFDocuments = data => {
   var result = []
   documents &&
     Object.keys(documents).map(k => {
-      if (documents[k] && documents[k].name && documents[k].name.indexOf('.pdf') > 0) {
+      if (documents[k]  && documents[k].url.indexOf('.pdf') > 0) {
         result.push(documents[k])
       }
     })
+    console.log(" results",result)
   return result
 }
 
