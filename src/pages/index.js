@@ -43,7 +43,7 @@ const FooterLine = styled.img`
   position: absolute;
   outline: none;
   @media (orientation: portrait) {
-    bottom: 10%;
+    bottom: 8%;
   }
 `;
 
@@ -237,6 +237,7 @@ export const pageQuery = graphql` query($uid: String){
                 embed_url
                 html
               }
+              toggle_the_moving_of_the_x_button_to_the_left
             }
           }
           ... on PrismicBlogpostBodySocial {

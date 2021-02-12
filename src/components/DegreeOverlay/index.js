@@ -3,11 +3,15 @@ import PropTypes from 'prop-types'
 import Iframe from "react-iframe";
 
 function DegreeOverlay({ removeOverlay, data }) {
+  let cName = 'overlay-close';
+  if(data['toggle_the_moving_of_the_x_button_to_the_left']){
+    cName += ' toggle_x';
+  }
   return (
     <div className="overlay">
      <button
         type="button"
-        className="overlay-close"
+        className={cName}
         onClick={e => removeOverlay()}
       >
         Close

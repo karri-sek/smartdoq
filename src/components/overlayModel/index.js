@@ -71,7 +71,7 @@ function OverlayModel({
                     alt="wp"
                     className="contact-img"
                     onClick={() => {
-                      window.location = 'mailto:' + mail_icon.url
+                      window.location = mail_url.url
                     }}
                   />
                 </li>
