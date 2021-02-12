@@ -237,6 +237,7 @@ export const pageQuery = graphql` query($uid: String){
                 embed_url
                 html
               }
+              toggle_the_moving_of_the_x_button_to_the_left
             }
           }
           ... on PrismicBlogpostBodySocial {
