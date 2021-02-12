@@ -38,12 +38,13 @@ import {
 const FooterLine = styled.img`
   left: 5%;
   bottom: 7%;
-  width: 90%;
+  width: 78%;
   height: 0.3%;
   position: absolute;
   outline: none;
   @media (orientation: portrait) {
     bottom: 8%;
+    width: 70%;
   }
 `;
 
