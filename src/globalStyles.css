@@ -165,6 +165,10 @@ a {
     background-color: #686868;
 }
 
+.toggle_x {
+  right: 70px !important;
+}
+
 .contact-img{
   width: 5%;
 }
