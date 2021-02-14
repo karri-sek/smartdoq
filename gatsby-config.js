@@ -11,6 +11,15 @@ module.exports = {
   /* Your site config here */
   plugins: [
     "gatsby-disable-404",
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+          custom: {
+              families: ['SuperGrotesk Regular, SuperGrotesk Medium, sCamela Medium'],
+              urls: ['/fonts/fonts.css'],
+          },
+      },
+  },
     /*
    * Gatsby's data processing layer begins with “source”
    * plugins. Here the site sources its data from prismic.io.

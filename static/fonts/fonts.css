@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "SuperGrotesk Regular";
+    src: url("SuperGroteskPro.otf");
+  }
+
+  @font-face {
+    font-family: "SuperGroteskPro";
+    src: url("SuperGroteskPro.otf");
+  }
+
+  @font-face {
+    font-family: "SuperGrotesk Medium";
+    src: url("SuperGroteskPro-Medium.otf");
+  }
+  @font-face {
+    font-family: "Canela Medium";
+    src: url("Canela-Medium.otf");
+  }
+  @font-face {
+    font-family: "Canela Thin";
+    src: url("Canela-Thin.otf");
+  }
+  @font-face {
+    font-family: "SuperGrotesk Cond Bold";
+    src: url("SuperGroteskPro-Cond-Bold.otf");
+  }
+  @font-face {
+    font-family: "SuperGrotesk Cond Medium";
+    src: url("SuperGroteskPro-Cond-Medium.otf");
+  }
+  @font-face {
+    font-family: "SuperGrotesk Cond";
+    src: url("SuperGroteskPro-Cond.otf");
+  }
+  @font-face {
+    font-family: "SuperGrotesk Bold";
+    src: url("SuperGroteskPro-Bold.otf");
+  }
