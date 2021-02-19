@@ -44,7 +44,6 @@ export const getPDFDocuments = data => {
         result.push(documents[k])
       }
     })
-    console.log(" results",result)
   return result
 }
 

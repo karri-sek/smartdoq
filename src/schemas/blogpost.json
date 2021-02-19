@@ -1,562 +1,753 @@
 {
-  "Main" : {
-    "uid" : {
-      "type" : "UID",
-      "config" : {
-        "label" : "UID",
-        "placeholder" : "A unique UID for this website, usually hotel's name"
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "UID",
+        "placeholder": "A unique UID for this website, usually hotel's name"
       }
     },
-    "name" : {
-      "type" : "StructuredText",
-      "config" : {
-        "single" : "heading1",
-        "label" : "name",
-        "placeholder" : "name of the website"
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "name",
+        "placeholder": "name of the website"
       }
     },
-    "website_main_logo" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : {
-          "width" : 190,
-          "height" : 189
+    "website_main_logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 190,
+          "height": 189
         },
-        "thumbnails" : [ {
-          "name" : "a",
-          "width" : 1500,
-          "height" : 500
-        } ],
-        "label" : "website_main_logo"
+        "thumbnails": [
+          {
+            "name": "a",
+            "width": 1500,
+            "height": 500
+          }
+        ],
+        "label": "website_main_logo"
       }
     },
-    "logo_description" : {
-      "type" : "StructuredText",
-      "config" : {
-        "multi" : "paragraph, heading2, heading5, image, o-list-item",
-        "label" : "logo_description",
-        "placeholder" : "place the logo description here"
+    "logo_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading2, heading5, image, o-list-item",
+        "label": "logo_description",
+        "placeholder": "place the logo description here"
       }
     },
-    "website_background_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : {
-          "width" : null,
-          "height" : null
+    "website_background_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": null,
+          "height": null
         },
-        "thumbnails" : [ ],
-        "label" : "website_background_image"
+        "thumbnails": [],
+        "label": "website_background_image"
       }
     },
-    "footer_line_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : {
-          "width" : 1,
-          "height" : 1
+    "footer_line_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1,
+          "height": 1
         },
-        "thumbnails" : [ ],
-        "label" : "footer_line_image"
+        "thumbnails": [],
+        "label": "footer_line_image"
       }
     },
-    "footer_image" : {
-      "type" : "Image",
-      "config" : {
-        "constraint" : { },
-        "thumbnails" : [ ],
-        "label" : "footer_image"
+    "footer_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "footer_image"
       }
     },
-    "footer_image_url" : {
-      "type" : "Link",
-      "config" : {
-        "label" : "footer_image_url"
+    "footer_image_url": {
+      "type": "Link",
+      "config": {
+        "label": "footer_image_url"
       }
     },
-    "body" : {
-      "type" : "Slices",
-      "fieldset" : "Slice zone",
-      "config" : {
-        "labels" : {
-          "slice1" : [ {
-            "name" : "blogpostslice",
-            "display" : "blogpostSlice"
-          } ],
-          "rightbar" : [ ],
-          "headerline" : [ ],
-          "ehub" : [ ],
-          "video-map-slice" : [ ],
-          "pdfslice" : [ ],
-          "communications" : [ ],
-          "social" : [ ],
-          "menu" : [ ],
-          "sociallogos" : [ ],
-          "websitemeta" : [ ],
-          "sharelogos" : [ ],
-          "se" : [ ]
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "slice1": [
+            {
+              "name": "blogpostslice",
+              "display": "blogpostSlice"
+            }
+          ],
+          "rightbar": [],
+          "headerline": [],
+          "ehub": [],
+          "video-map-slice": [],
+          "pdfslice": [],
+          "communications": [],
+          "social": [],
+          "menu": [],
+          "sociallogos": [],
+          "websitemeta": [],
+          "sharelogos": [],
+          "se": [],
+          "slider": []
         },
-        "choices" : {
-          "video-map-slice" : {
-            "type" : "Slice",
-            "fieldset" : "video-map-slice",
-            "description" : "please add video or map urls to this slice",
-            "icon" : "switch_video",
-            "display" : "list",
-            "non-repeat" : {
-              "toggle_the_moving_of_the_x_button_to_the_left" : {
-                "type" : "Boolean",
-                "config" : {
-                  "default_value" : false,
-                  "label" : "Toggle the moving of the X button to the left"
+        "choices": {
+          "video-map-slice": {
+            "type": "Slice",
+            "fieldset": "video-map-slice",
+            "description": "please add video or map urls to this slice",
+            "icon": "switch_video",
+            "display": "list",
+            "non-repeat": {
+              "toggle_the_moving_of_the_x_button_to_the_left": {
+                "type": "Boolean",
+                "config": {
+                  "default_value": false,
+                  "label": "Toggle the moving of the X button to the left"
                 }
               },
-              "three_sixty_degree_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "three_sixty_degree_url",
-                  "placeholder" : "place the url for three sixty degree url"
+              "three_sixty_degree_url": {
+                "type": "Link",
+                "config": {
+                  "label": "three_sixty_degree_url",
+                  "placeholder": "place the url for three sixty degree url"
                 }
               },
-              "three_sixty_degree_image" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "three_sixty_degree_image"
+              "three_sixty_degree_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "three_sixty_degree_image"
                 }
               },
-              "image_video" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "image_video"
+              "image_video": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image_video"
                 }
               },
-              "video_url" : {
-                "type" : "Embed",
-                "config" : {
-                  "label" : "video_url",
-                  "placeholder" : "place video url"
+              "video_url": {
+                "type": "Embed",
+                "config": {
+                  "label": "video_url",
+                  "placeholder": "place video url"
                 }
               },
-              "image_video_1" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "image_video_1"
+              "image_video_1": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image_video_1"
                 }
               },
-              "video_url_1" : {
-                "type" : "Embed",
-                "config" : {
-                  "label" : "video_url_1",
-                  "placeholder" : "place holder for video 2"
+              "video_url_1": {
+                "type": "Embed",
+                "config": {
+                  "label": "video_url_1",
+                  "placeholder": "place holder for video 2"
                 }
               },
-              "image_videos_2" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "image_videos_2"
+              "image_videos_2": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image_videos_2"
                 }
               },
-              "video_url_2" : {
-                "type" : "Embed",
-                "config" : {
-                  "label" : "video_url_2",
-                  "placeholder" : "place holder for video 3"
+              "video_url_2": {
+                "type": "Embed",
+                "config": {
+                  "label": "video_url_2",
+                  "placeholder": "place holder for video 3"
                 }
               },
-              "video_image" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "video_image"
+              "video_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "video_image"
                 }
               },
-              "three_d_model_embed_url" : {
-                "type" : "Embed",
-                "config" : {
-                  "label" : "three_d_model_embed_url",
-                  "placeholder" : "place the embed url for the three d model to view"
+              "three_d_model_embed_url": {
+                "type": "Embed",
+                "config": {
+                  "label": "three_d_model_embed_url",
+                  "placeholder": "place the embed url for the three d model to view"
                 }
               },
-              "three_d_model_image" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "three_d_model_image"
+              "three_d_model_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "three_d_model_image"
                 }
               },
-              "three_d_model_glb" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "three_d_model_glb",
-                  "placeholder" : "place the glb file url here pls"
+              "three_d_model_glb": {
+                "type": "Link",
+                "config": {
+                  "label": "three_d_model_glb",
+                  "placeholder": "place the glb file url here pls"
                 }
               }
             },
-            "repeat" : { }
+            "repeat": {}
           },
-          "pdfslice" : {
-            "type" : "Slice",
-            "fieldset" : "pdfslice",
-            "description" : "add content related to pdf",
-            "icon" : "picture_as_pdf",
-            "display" : "list",
-            "non-repeat" : {
-              "pdf_image" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "pdf_image"
+          "pdfslice": {
+            "type": "Slice",
+            "fieldset": "pdfslice",
+            "description": "add content related to pdf",
+            "icon": "picture_as_pdf",
+            "display": "list",
+            "non-repeat": {
+              "pdf_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "pdf_image"
                 }
               },
-              "document_1" : {
-                "type" : "Link",
-                "config" : {
-                  "select" : "media",
-                  "label" : "document_1",
-                  "placeholder" : "place the document(pdf) url"
+              "document_name_1": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_1",
+                  "placeholder": "place the name of the document here"
                 }
               },
-              "document_image_1" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "document_image_1"
+              "document_1": {
+                "type": "Link",
+                "config": {
+                  "select": "media",
+                  "label": "document_1",
+                  "placeholder": "place the document(pdf) url"
                 }
               },
-              "document_2" : {
-                "type" : "Link",
-                "config" : {
-                  "select" : "media",
-                  "label" : "document_2",
-                  "placeholder" : "place the second document url"
+              "document_image_1": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_1"
                 }
               },
-              "document_image_2" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "document_image_2"
+              "document_name_2": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_2",
+                  "placeholder": "place the name of the document here"
                 }
               },
-              "document_3" : {
-                "type" : "Link",
-                "config" : {
-                  "select" : "media",
-                  "label" : "document_3",
-                  "placeholder" : "place the url for the document  number 3"
+              "document_2": {
+                "type": "Link",
+                "config": {
+                  "select": "media",
+                  "label": "document_2",
+                  "placeholder": "place the second document url"
                 }
               },
-              "document_image_3" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "document_image_3"
+              "document_image_2": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_2"
                 }
               },
-              "document_4" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "document_4",
-                  "placeholder" : "place the url for document 4"
+              "document_name_3": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_3",
+                  "placeholder": "place the name of the document 3 here"
                 }
               },
-              "document_image_4" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "document_image_4"
+              "document_3": {
+                "type": "Link",
+                "config": {
+                  "select": "media",
+                  "label": "document_3",
+                  "placeholder": "place the url for the document  number 3"
                 }
               },
-              "document_5" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "document_5",
-                  "placeholder" : "place the document 5 pdf here"
+              "document_image_3": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_3"
                 }
               },
-              "document_image_5" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "document_image_5"
+              "document_name_4": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_4",
+                  "placeholder": "place the name of the document 4 here"
+                }
+              },
+              "document_4": {
+                "type": "Link",
+                "config": {
+                  "label": "document_4",
+                  "placeholder": "place the url for document 4"
+                }
+              },
+              "document_image_4": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_4"
+                }
+              },
+              "document_name_5": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_5",
+                  "placeholder": "place the name of the document 5 here"
+                }
+              },
+              "document_5": {
+                "type": "Link",
+                "config": {
+                  "label": "document_5",
+                  "placeholder": "place the document 5 pdf here"
+                }
+              },
+              "document_image_5": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_5"
+                }
+              },
+              "document_name_6": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_6",
+                  "placeholder": "place the name of the document 6 here"
+                }
+              },
+              "document_6": {
+                "type": "Link",
+                "config": {
+                  "label": "document_6",
+                  "placeholder": "place the document 5 pdf here"
+                }
+              },
+              "document_image_6": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_6"
+                }
+              },
+              "document_name_7": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_7",
+                  "placeholder": "enter the name of the document 7 this will appear under the image on pdf gallery"
+                }
+              },
+              "document_7": {
+                "type": "Link",
+                "config": {
+                  "label": "document_7",
+                  "placeholder": "place the pdf for document 7"
+                }
+              },
+              "document_image_7": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_7"
+                }
+              },
+              "document_name_8": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label": "document_name_8",
+                  "placeholder": "enter the name of the document 8 this will appear under the image on pdf gallery"
+                }
+              },
+              "document_8": {
+                "type": "Link",
+                "config": {
+                  "label": "document_8",
+                  "placeholder": "place the pdf for document 8"
+                }
+              },
+              "document_image_8": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_8"
+                }
+              },
+              "document_name_9": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading6",
+                  "label": "document_name_9",
+                  "placeholder": "enter the name of the document 9 this will appear under the image on pdf gallery"
+                }
+              },
+              "document_9": {
+                "type": "Link",
+                "config": {
+                  "label": "document_9",
+                  "placeholder": "place the pdf url for the pdf document 9"
+                }
+              },
+              "document_image_9": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_9"
+                }
+              },
+              "document_name_10": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading6",
+                  "label": "document_name_10",
+                  "placeholder": "enter the name of the document 10 this will appear under the image on pdf gallery"
+                }
+              },
+              "document_10": {
+                "type": "Link",
+                "config": {
+                  "label": "document_10",
+                  "placeholder": "document 10 pdf here"
+                }
+              },
+              "document_image_10": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "document_image_10"
                 }
               }
             },
-            "repeat" : { }
+            "repeat": {}
           },
-          "social" : {
-            "type" : "Slice",
-            "fieldset" : "social",
-            "description" : "this section contains the social icons information",
-            "icon" : "supervisor_account",
-            "display" : "grid",
-            "non-repeat" : {
-              "instagram_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "instagram_url",
-                  "placeholder" : "place the instagram url"
+          "social": {
+            "type": "Slice",
+            "fieldset": "social",
+            "description": "this section contains the social icons information",
+            "icon": "supervisor_account",
+            "display": "grid",
+            "non-repeat": {
+              "instagram_url": {
+                "type": "Link",
+                "config": {
+                  "label": "instagram_url",
+                  "placeholder": "place the instagram url"
                 }
               },
-              "instagram_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : {
-                    "width" : null,
-                    "height" : null
+              "instagram_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": null,
+                    "height": null
                   },
-                  "thumbnails" : [ ],
-                  "label" : "instagram_icon"
+                  "thumbnails": [],
+                  "label": "instagram_icon"
                 }
               },
-              "facebook_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "facebook_url",
-                  "placeholder" : "place the facebook url"
+              "facebook_url": {
+                "type": "Link",
+                "config": {
+                  "label": "facebook_url",
+                  "placeholder": "place the facebook url"
                 }
               },
-              "facebook_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "facebook_icon"
+              "facebook_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "facebook_icon"
                 }
               },
-              "linkedin_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "linkedin_url",
-                  "placeholder" : "place the linkedin url"
+              "linkedin_url": {
+                "type": "Link",
+                "config": {
+                  "label": "linkedin_url",
+                  "placeholder": "place the linkedin url"
                 }
               },
-              "linked_in_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "linked_in_icon"
+              "linked_in_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "linked_in_icon"
                 }
               },
-              "whatsapp_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "whatsapp_url",
-                  "placeholder" : "place the url for whatsapp"
+              "whatsapp_url": {
+                "type": "Link",
+                "config": {
+                  "label": "whatsapp_url",
+                  "placeholder": "place the url for whatsapp"
                 }
               },
-              "whatsapp_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "whatsapp_icon"
+              "whatsapp_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "whatsapp_icon"
                 }
               },
-              "mail_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "mail_url",
-                  "placeholder" : "place the mail to url"
+              "mail_url": {
+                "type": "Link",
+                "config": {
+                  "label": "mail_url",
+                  "placeholder": "place the mail to url"
                 }
               },
-              "mail_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "mail_icon"
+              "mail_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "mail_icon"
                 }
               },
-              "phone_number" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label" : "phone_number",
-                  "placeholder" : "place phone number"
+              "phone_number": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "phone_number",
+                  "placeholder": "place phone number"
                 }
               },
-              "phone_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "phone_icon"
+              "phone_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "phone_icon"
                 }
               },
-              "location_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "location_url",
-                  "placeholder" : "place location url"
+              "location_url": {
+                "type": "Link",
+                "config": {
+                  "label": "location_url",
+                  "placeholder": "place location url"
                 }
               },
-              "location_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "location_icon"
+              "location_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "location_icon"
                 }
               },
-              "website_url" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "website_url",
-                  "placeholder" : "website url"
+              "website_url": {
+                "type": "Link",
+                "config": {
+                  "label": "website_url",
+                  "placeholder": "website url"
                 }
               },
-              "website_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "website_icon"
+              "website_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "website_icon"
                 }
               }
             },
-            "repeat" : { }
+            "repeat": {}
           },
-          "menu" : {
-            "type" : "Slice",
-            "fieldset" : "menu",
-            "description" : "contains the details for menu icons",
-            "icon" : "menu",
-            "display" : "list",
-            "non-repeat" : {
-              "menu_left_icon_bgcolor" : {
-                "type" : "Color",
-                "config" : {
-                  "label" : "menu_left_icon_bgcolor"
+          "menu": {
+            "type": "Slice",
+            "fieldset": "menu",
+            "description": "contains the details for menu icons",
+            "icon": "menu",
+            "display": "list",
+            "non-repeat": {
+              "menu_left_icon_bgcolor": {
+                "type": "Color",
+                "config": {
+                  "label": "menu_left_icon_bgcolor"
                 }
               },
-              "menu_left_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : {
-                    "width" : null,
-                    "height" : null
+              "menu_left_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": null,
+                    "height": null
                   },
-                  "thumbnails" : [ ],
-                  "label" : "menu_left_icon"
+                  "thumbnails": [],
+                  "label": "menu_left_icon"
                 }
               },
-              "show_right_menu" : {
-                "type" : "Boolean",
-                "config" : {
-                  "default_value" : true,
-                  "label" : "show_right_menu"
+              "show_right_menu": {
+                "type": "Boolean",
+                "config": {
+                  "default_value": true,
+                  "label": "show_right_menu"
                 }
               },
-              "menu_right_icon_bg_color" : {
-                "type" : "Color",
-                "config" : {
-                  "label" : "menu_right_icon_bg_color"
+              "menu_right_icon_bg_color": {
+                "type": "Color",
+                "config": {
+                  "label": "menu_right_icon_bg_color"
                 }
               },
-              "menu_right_icon" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "menu_right_icon"
+              "menu_right_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "menu_right_icon"
                 }
               },
-              "menu_right_image_url_1" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "menu_right_image_url_1"
+              "menu_right_image_url_1": {
+                "type": "Link",
+                "config": {
+                  "label": "menu_right_image_url_1"
                 }
               },
-              "menu_right_image_1" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "menu_right_image_1"
+              "menu_right_image_1": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "menu_right_image_1"
                 }
               },
-              "menu_right_image_url_2" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "menu_right_image_url_2"
+              "menu_right_image_url_2": {
+                "type": "Link",
+                "config": {
+                  "label": "menu_right_image_url_2"
                 }
               },
-              "menu_right_image_2" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "menu_right_image_2"
+              "menu_right_image_2": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "menu_right_image_2"
                 }
               },
-              "menu_right_image_url_3" : {
-                "type" : "Link",
-                "config" : {
-                  "label" : "menu_right_image_url_3"
+              "menu_right_image_url_3": {
+                "type": "Link",
+                "config": {
+                  "label": "menu_right_image_url_3"
                 }
               },
-              "menu_right_image_3" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "menu_right_image_3"
+              "menu_right_image_3": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "menu_right_image_3"
                 }
               }
             },
-            "repeat" : { }
+            "repeat": {}
           },
-          "websitemeta" : {
-            "type" : "Slice",
-            "fieldset" : "websiteMeta",
-            "description" : "place the wesbite meta data information here",
-            "icon" : "work",
-            "display" : "list",
-            "non-repeat" : {
-              "title" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label" : "title",
-                  "placeholder" : "place holder for title"
+          "websitemeta": {
+            "type": "Slice",
+            "fieldset": "websiteMeta",
+            "description": "place the wesbite meta data information here",
+            "icon": "work",
+            "display": "list",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "title",
+                  "placeholder": "place holder for title"
                 }
               },
-              "description" : {
-                "type" : "StructuredText",
-                "config" : {
-                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
-                  "label" : "description",
-                  "placeholder" : "description"
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label": "description",
+                  "placeholder": "description"
                 }
               },
-              "meta_link_share_image" : {
-                "type" : "Image",
-                "config" : {
-                  "constraint" : { },
-                  "thumbnails" : [ ],
-                  "label" : "meta_link_share_image"
+              "meta_link_share_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "meta_link_share_image"
                 }
               }
             },
-            "repeat" : { }
+            "repeat": {}
+          },
+          "slider": {
+            "type": "Slice",
+            "fieldset": "Slider",
+            "description": "The main slider for the component",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "slide_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Slide Image"
+                }
+              },
+              "slide_caption": {
+                "type": "Text",
+                "config": {
+                  "label": "Slide caption"
+                }
+              },
+              "slide_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Slide description"
+                }
+              }
+            }
           }
         }
       }
