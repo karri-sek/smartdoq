@@ -377,6 +377,19 @@ export const pageQuery = graphql`
                             __typename
                         }
                     }
+                    ... on PrismicBlogpostBodyVideo {
+                        slice_type
+                        items {
+                            video {
+                                embed_url
+                                html
+                            }
+                            video_title {
+                                text
+                            }
+                            __typename
+                        }
+                    }
                 }
             }
         }
